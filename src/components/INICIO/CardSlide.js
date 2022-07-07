@@ -91,11 +91,11 @@ function CardSlide() {
                 {
                     habitaciones?.map(habitaciones => (
                         <div class="container">
-
+                            <div className="image-card-slide">
+                                <ImageCardSlide carousel={habitaciones.fotos} />
+                            </div>
                             <div class="card">
-                                <div className="image-card-slide">
-                                    <ImageCardSlide carousel={habitaciones.fotos} />
-                                </div>
+                                
                                 
                                 {/*  ---------- CARD PARTE delantera ---------- */}
                                 <div class="card__1">

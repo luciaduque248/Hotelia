@@ -81,16 +81,17 @@
 .cards{
     padding: 1rem 0;
 }
+
 .habs-cards{
-    border-radius: 20px; 
     padding: 0 auto;
-    width: 100%;
+    width: 26vw;
     height: 40vh;
     object-fit: cover;
     object-position: center;
 }
 
 .img-cards-slide{
+    width: 26vw;
     border-radius: 20px; 
     position: relative;
     top: -30px;
@@ -171,20 +172,12 @@
     backface-visibility: hidden;
 }
 
-
-
-
 .card__2{
     border-radius:10px;
     transform: rotateY(180deg);
 }
 
-.container:hover .card{
+.card:hover{
     transform: rotateY(180deg);
 }
-.container:hover .image-card-slide{
-    transform: rotateY(-180deg);
-}
-
-/* --------CARD__2--------- */
 
