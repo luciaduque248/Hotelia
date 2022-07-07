@@ -62,7 +62,7 @@ function Inicio() {
                 <img src={Maps} alt='cargando...'/>
             </div>
         </div>
-<h1>Hola</h1>
+
         <Footer/>
 
     </div>
