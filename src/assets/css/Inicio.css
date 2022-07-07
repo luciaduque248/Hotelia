@@ -125,8 +125,10 @@ body{
 }
 
 .habs-flex{
+    padding-left: 3rem;
     display: flex;
 }
+
 
 .habs-flex .hab{
     padding-left: 3rem;
@@ -173,12 +175,14 @@ body{
 }
 
 .descubre{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
     width: 45vw;
     margin: 0 1rem;
+    padding: 0 1.5rem;
 }
 
 .descubre h1{
@@ -198,10 +202,15 @@ body{
 }
 
 .descubre-galeria{
-    background-color: aqua;
-    width: 50vw;
-    height: 70vh;
+    padding: 3rem;
+    width: 40vw;
+    height:55vh;
 }
+
+.descubre-galeria img{
+    width: 40vw;
+}
+
 
 .habitaciones-precios{
     display: flex;
@@ -227,9 +236,85 @@ body{
 .cards{
     box-shadow: 3px 8px 10px rgba(113, 112, 112, 0.786);
     background-color: white;
+    width: 26vw;
     margin: 2rem 2rem;
-    height: 87vh;
+
+    transform-style: preserve-3d;
+    transition: all 1s linear;
+    cursor: pointer;
 }
+
+.card:hover{
+    transform: rotateY(180deg);
+  }
+
+.button-card-inicio{
+    position: relative;
+    top: 30px;
+}
+
+.card__1{
+    height: 35vh;
+    z-index: 5;
+    backface-visibility: hidden;
+}
+
+.card__1::before{
+    content: '';
+    height: 130px;
+    width:130px ;
+    background: hsla(318, 100%, 89%, 0.7);
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    /* filter: blur(2px); */
+    border-radius: 73% 27% 50% 50% / 39% 43% 57% 61% ;
+
+}
+
+.card__2{
+    color: #4C4C4C;
+    box-shadow: 3px 8px 10px rgba(113, 112, 112, 0.786);
+    background-image: url('../img/Vector\ 9.png');
+    background-position: right top;
+    background-size: scale-down;
+    background-repeat: no-repeat;
+    margin: 2rem 2rem;
+    width: 25vw;
+    height: 45vh;
+}
+
+.line-1, .line-2, .line-3{
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.line-1 p, .line-2 p, .line-3 p{
+    font-size: 25px;
+}
+
+
+.content__2{
+    height: 35vh;
+    padding: 2rem 1rem;
+}
+
+.texto-icono-cardback img{
+    width: 80%;
+}
+
+.precio{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Akrobat';
+    margin-top: -1rem;
+}
+
+.precio h1{
+    font-size: 25px;
+}
+/* Imagenes de las cards */
 
 .habs-cards{
     padding: 0 auto;
@@ -238,6 +323,8 @@ body{
     object-fit: cover;
     object-position: center;
 }
+
+/*-------------------------*/
 
 .cards h1{
     padding: 0 2rem;
@@ -261,6 +348,7 @@ body{
 }
 
 .cards .reservar-cards {
+    margin-top: 5px;
     margin-left: 13rem;
     background-color: #157A8A;
     font-family: 'Akrobat';
@@ -271,6 +359,8 @@ body{
     font-weight: bold;
     border-radius: 4px;
 }
+
+
 
 .experiencias{
     padding: 0 5rem;

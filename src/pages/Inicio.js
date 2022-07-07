@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import Header from '../components/INICIO/Header'
 
+
 import '../assets/css/Inicio.css'
 import SimpleSlider from '../components/INICIO/Slide'
 import FormBuscar from '../components/INICIO/FormBuscar'
@@ -11,6 +12,7 @@ import { api } from '../utils/peticiones'
 import ExpSlide from '../components/INICIO/ExpSlide'
 import Maps from '../assets/img/mapa.png'
 import Footer from '../components/INICIO/Footer'
+import DescubreSlide from '../components/INICIO/DescubreSlide'
 
 function Inicio() {
     const [habitaciones, setHabitaciones] = useState([]);
@@ -33,8 +35,8 @@ function Inicio() {
                 <h1>Descubre Hotelia</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim iaculis sit faucibus non. Amet nec massa faucibus non est. Arcu elementum id ac suspendisse vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div className='descubre-galeria'>
-
+            <div>
+                <DescubreSlide/>
             </div>
         </div>
         <div className='habitaciones-precios' id='habitacion'>
@@ -63,8 +65,10 @@ function Inicio() {
             </div>
         </div>
 
-        <Footer/>
+          
 
+        <Footer/>
+        
     </div>
   )
 }
