@@ -3,6 +3,10 @@
     --negro: #333333;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     overflow-x: hidden;
@@ -22,6 +26,7 @@ body{
 }
 
 .banner-inicio-1 h1{
+    margin-bottom: 5rem;
     text-shadow: 3px 3px 4px #00000098;
     font-weight:900;
     text-align: right;
@@ -172,15 +177,16 @@ body{
     display: flex;
     padding: 7rem 5rem;
     text-align: right;
+    width: 100%;
+    height:  60vh;
 }
 
 .descubre{
-    
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
-    width: 45vw;
+    width: 40vw;
     margin: 0 1rem;
     padding: 0 1.5rem;
 }
@@ -193,6 +199,7 @@ body{
 }
 
 .descubre p{
+    padding-top: 2rem;
     width: 38vw;
     text-align: right;
     font-family: 'Biko';
@@ -203,12 +210,12 @@ body{
 
 .descubre-galeria{
     padding: 3rem;
-    width: 40vw;
-    height:55vh;
+    width: 38vw;
+    height: 55vh;
 }
 
 .descubre-galeria img{
-    width: 40vw;
+    width: 38vw;
 }
 
 
@@ -219,7 +226,7 @@ body{
     font-family: 'Akrobat';
     
     margin-bottom: 2rem;
-    height: 100vh;
+    height: 150vh;
 }
 
 .habitaciones-precios h1{
@@ -227,138 +234,7 @@ body{
     margin-bottom: 3rem;
 }
 
-.container-cards-inicio{
-    padding: 0rem 3rem;
-    padding-bottom: 3rem;
-    
-}
 
-.cards{
-    box-shadow: 3px 8px 10px rgba(113, 112, 112, 0.786);
-    background-color: white;
-    width: 26vw;
-    margin: 2rem 2rem;
-
-    transform-style: preserve-3d;
-    transition: all 1s linear;
-    cursor: pointer;
-}
-
-.card:hover{
-    transform: rotateY(180deg);
-  }
-
-.button-card-inicio{
-    position: relative;
-    top: 30px;
-}
-
-.card__1{
-    height: 35vh;
-    z-index: 5;
-    backface-visibility: hidden;
-}
-
-.card__1::before{
-    content: '';
-    height: 130px;
-    width:130px ;
-    background: hsla(318, 100%, 89%, 0.7);
-    position: absolute;
-    top: 50px;
-    left: 60px;
-    /* filter: blur(2px); */
-    border-radius: 73% 27% 50% 50% / 39% 43% 57% 61% ;
-
-}
-
-.card__2{
-    color: #4C4C4C;
-    box-shadow: 3px 8px 10px rgba(113, 112, 112, 0.786);
-    background-image: url('../img/Vector\ 9.png');
-    background-position: right top;
-    background-size: scale-down;
-    background-repeat: no-repeat;
-    margin: 2rem 2rem;
-    width: 25vw;
-    height: 45vh;
-}
-
-.line-1, .line-2, .line-3{
-    font-size: 28px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.line-1 p, .line-2 p, .line-3 p{
-    font-size: 25px;
-}
-
-
-.content__2{
-    height: 35vh;
-    padding: 2rem 1rem;
-}
-
-.texto-icono-cardback img{
-    width: 80%;
-}
-
-.precio{
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Akrobat';
-    margin-top: -1rem;
-}
-
-.precio h1{
-    font-size: 25px;
-}
-/* Imagenes de las cards */
-
-.habs-cards{
-    padding: 0 auto;
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-    object-position: center;
-}
-
-/*-------------------------*/
-
-.cards h1{
-    padding: 0 2rem;
-    font-family: 'Biko';
-    text-align: left;
-    padding-top: 1rem;
-}
-
-.cards p{
-    padding: 0 2rem;
-    font-family: 'Biko';
-    margin-top: -2rem;
-    line-height: 30px;
-}
-
-.cards h2{
-    padding: 0 2rem;
-    font-family: 'Biko';
-    text-align: right;
-    padding-top: 1rem;
-}
-
-.cards .reservar-cards {
-    margin-top: 5px;
-    margin-left: 13rem;
-    background-color: #157A8A;
-    font-family: 'Akrobat';
-    color: white;
-    border: none;
-    font-size: 18px;
-    padding: 0.7rem 3rem;
-    font-weight: bold;
-    border-radius: 4px;
-}
 
 
 
@@ -399,10 +275,11 @@ body{
 }
 
 .ubicacion img{
-    width: 70%;
+    width: 100%;
 }
 
 .ubicacion{
+    padding: 0 3rem;
     display: flex;
     justify-content: center;
 }

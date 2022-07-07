@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import Header from '../components/INICIO/Header'
+import Header from '../components/Header/Header'
 
 
 import '../assets/css/Inicio.css'
@@ -11,7 +11,7 @@ import axios from 'axios'
 import { api } from '../utils/peticiones'
 import ExpSlide from '../components/INICIO/ExpSlide'
 import Maps from '../assets/img/mapa.png'
-import Footer from '../components/INICIO/Footer'
+import Footer from '../components/Footer/Footer'
 import DescubreSlide from '../components/INICIO/DescubreSlide'
 
 function Inicio() {

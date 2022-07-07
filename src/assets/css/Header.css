@@ -31,6 +31,7 @@
 
 
 .navbar-ul{
+    padding: 1rem 0;
     float: right;
     margin-right: 20px;
     list-style: none;
