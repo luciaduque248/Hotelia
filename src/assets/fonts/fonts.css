@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Akrobat-black;
+    src: url(./Akrobat/Akrobat-Black.otf);
+}
+
+@font-face {
+    font-family: Akrobat-Bold;
+    src: url(./Akrobat/Akrobat-Bold.otf);
+}
+
+@font-face {
+    font-family: Akrobat-ExtraBold;
+    src: url(./Akrobat/Akrobat-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Akrobat-ExtraLight;
+    src: url(./Akrobat/Akrobat-ExtraLight.otf);
+}
+
+@font-face {
+    font-family: Akrobat-Light;
+    src: url(./Akrobat/Akrobat-Light.otf);
+}
+
+@font-face {
+    font-family: Akrobat-Regular;
+    src: url(./Akrobat/Akrobat-Regular.otf);
+}
+
+@font-face {
+    font-family: Akrobat-SemiBold;
+    src: url(./Akrobat/Akrobat-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Akrobat-Thin;
+    src: url(./Akrobat/Akrobat-Thin.otf);
+}
+
+
+
+
+
+@font-face {
+    font-family: Biko-Black;
+    src: url(./Biko/Biko_Black.otf);
+}
+
+@font-face {
+    font-family: Biko-Bold;
+    src: url(./Biko/Biko_Bold.otf);
+}
+
+@font-face {
+    font-family: Biko-Regular;
+    src: url(./Biko/Biko_Regular.otf);
+}
+
+@font-face {
+    font-family: Biko-Light;
+    src: url(./Biko/Biko_Light-Restricted.otf);
+}
