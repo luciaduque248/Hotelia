@@ -10,13 +10,12 @@
     font-family: 'Akrobat';
     font-weight: bold;
     font-size: 18px;
-    color: var(--dark);
-
+    color: var(--black);
 }
 
 .blue {
     background-color: var(--blue);
-    box-shadow: 1px 1px 1px var(--dark);
+    box-shadow: inset 1px 1px 1px var(--black);
 }
 
 .button {
@@ -32,6 +31,8 @@
 .Caption {
     font-family: 'Akrobat';
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 1px var(--black);
+    font-size: 20px;
 }
 
 .center {
@@ -41,10 +42,13 @@
 
 .container-color {
     background-color: var(--dark);
-    width: 300px;
+    width: 280px;
+    height: 250px;
     border-radius: 10px;
     padding: 1rem 2rem;
     color: var(--white);
+    box-shadow: inset 0 1px 1px var(--black);
+    margin-bottom: 1rem;
 }
 
 .container-color h2 {
@@ -53,27 +57,44 @@
 
 .container-color span {
     color: var(--gray);
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 .container-data {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
 }
 
 .container-iden {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 3rem;
+    margin: 2rem;
+}
+
+.container-iden h2,
+.container-iden p {
+    color: var(--dark);
+}
+
+.container-iden h2 {
+    text-align: center;
+}
+
+.container-iden span {
+    color: var(--black);
 }
 
 .container-text {
-    margin-left: 2rem;
+    margin: 1rem 0;
 }
 
 .gray {
     width: 80%;
+    box-shadow: inset 1px 1px 1px var(--black);
 }
 
 .gray,
@@ -90,6 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: inset 1px 1px 1px var(--black);
 }
 
 .icon i {
@@ -102,14 +124,74 @@
 }
 
 .photoPerfil {
-    width: 250px;
+    width: 200px;
 }
 
 .text {
     font-family: 'Biko';
     margin-bottom: 1rem;
+
 }
 
 .text span {
     font-weight: bolder;
+}
+
+@media screen and (min-width:768px) {
+    .Caption {
+        font-size: 22px;
+    }
+    .container-iden {
+        width: 310px;
+    }
+    .container-perfil{
+        display: flex;
+        margin: 0 auto;
+    }
+    .photoPerfil {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .container-color {
+        width: 300px;
+        height: 280px;
+        margin: 0 3rem;
+    }
+
+    .container-data {
+        flex-direction: row;
+    }
+
+    .container-iden {
+        width: 500px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem auto;
+    }
+    .container-perfil{
+        flex-direction: column;
+    }
+    .container-text {
+        margin-left: 2rem;
+    }
+
+    .gray {
+        width: 80%;
+        box-shadow: inset 1px 1px 1px var(--black);
+    }
+
+    .gray,
+    .icon {
+        background-color: var(--gray);
+    }
+
+    .photoPerfil {
+        width: 250px;
+    }
+
+
 }

@@ -11,11 +11,13 @@ function Admin_Perfil() {
     return (
         <div>
             <Admin_NavBar />
-            <Iden_dataAdmin/>
-            <div className='container-data'>
-                <Personal_dataAdmin/>
-                <Contact_dataAdmin/>
-                <Security_dataAdmin/>
+            <div className='container-perfil'>
+                <Iden_dataAdmin />
+                <div className='container-data'>
+                    <Personal_dataAdmin />
+                    <Contact_dataAdmin />
+                    <Security_dataAdmin />
+                </div>
             </div>
             <Footer />
         </div>
