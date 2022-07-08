@@ -1,9 +1,20 @@
+@import url(../fonts/fonts.css);
+
+* {
+    box-sizing: border-box;
+}
+
 .container-FormRoomSearch {
     display: flex;
-    background: rgb(0, 255, 34);
-    width: 50%;
-    height: 70px;
-    margin: 0 auto;
+    background: rgb(255, 255, 255);
+    width: 70%;
+    height: 100px;
+    margin: 10px auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .container_input-FormRoomSearch {
@@ -11,17 +22,101 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: blue;
+    /* background-color: blue; */
     width: min-content;
     padding: 10px;
 
 }
 
-.text_input-FormRoomSearch {
+.label_input-FormRoomSearch {
     font-size: 15px;
-    margin: 0px;
+    margin-bottom: 5px;
     text-transform: uppercase;
+    color: #333333;
+    font-family: Akrobat-Bold;
 }
+
+.input-FormRoomSearch {
+    /* background: red; */
+    width: 177px;
+    height: 27px;
+    margin-bottom: 10px;
+}
+
+.input_FormRoomSearch {
+    background: #d9d9d9;
+    position: absolute;
+    height: 27px;
+    top: -14px;
+    outline: none;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    color: #888888;
+    padding: 0 0 0 5px;
+    box-sizing: content-box;
+}
+
+
+
+.input_FormRoomSearch-dos,
+.input_FormRoomSearch-dos::placeholder {
+    /* background: #ecdd05d0;  */
+    top: 43px;
+    color: #888888;
+    width: 169px;
+}
+
+option {
+    color: #333333;
+}
+
+
+.icon-input_FormRoomSearch {
+    /* background: rgb(21, 255, 0);  */
+    padding: 8px 0 4px 10px;
+    position: relative;
+    left: 137px;
+    bottom: 11px;
+    border-left: 1px solid #333333;
+}
+
+.icon-input_FormRoomSearch-dos {
+    /* background: rgb(21, 255, 0);  */
+    padding: 8px 0 4px 10px;
+    position: relative;
+    left: 137px;
+    top: 9px;
+    border-left: 1px solid #333333;
+}
+
+
+.fa-calendar-week,
+.fa-calendar-day {
+    color: #333333;
+    font-size: 20px;
+}
+
+.fa-calendar-week:hover,
+.fa-calendar-day:hover {
+    color: #0F606D;
+    cursor: pointer;
+}
+
+
+.Button_FormRoomSearch {
+    background-color: #0F606D;
+    width: 122px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 5px;
+    
+    font-family: Akrobat-Bold;
+    text-align: center;
+    line-height: 34px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
 
 
 
