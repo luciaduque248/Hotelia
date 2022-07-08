@@ -1,14 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Inicio from '../pages/Inicio'
+import Formaliz from '../pages/Formsearch'
 
 function AppRoutes() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path='/Hotelia/' element={<Inicio/>} ></Route>
-
+            <Route path='/formaliz' element={<Formaliz/>}></Route>
         </Routes>
     </BrowserRouter>
   )
