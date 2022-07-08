@@ -141,13 +141,16 @@
     .Caption {
         font-size: 22px;
     }
+
     .container-iden {
         width: 310px;
     }
-    .container-perfil{
+
+    .container-perfil {
         display: flex;
         margin: 0 auto;
     }
+
     .photoPerfil {
         width: 280px;
     }
@@ -172,26 +175,17 @@
         justify-content: center;
         margin: 3rem auto;
     }
-    .container-perfil{
+
+    .container-perfil {
         flex-direction: column;
     }
+
     .container-text {
         margin-left: 2rem;
-    }
-
-    .gray {
-        width: 80%;
-        box-shadow: inset 1px 1px 1px var(--black);
-    }
-
-    .gray,
-    .icon {
-        background-color: var(--gray);
     }
 
     .photoPerfil {
         width: 250px;
     }
-
 
 }
