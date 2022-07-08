@@ -4,10 +4,11 @@ import '../assets/css/Dashboard_Admin.css';
 import { Link } from 'react-router-dom';
 import door from '../assets/img/iconos/Door.svg';
 import imagotype from '../assets/img/imagotype.png';
-
+import Footer from '../components/INICIO/Footer'
 
 function Admin_Dashboard() {
   return (
+    <div>
     <div className='background-admin'>
       <div className='group-header'>
         <div className='imagotype'>
@@ -32,6 +33,8 @@ function Admin_Dashboard() {
           <Link to="/" className="group-item-admin"><i class="fa-solid fa-user-pen"></i> PERFIL</Link>
         </div>
       </div>
+    </div>
+    <Footer/>
     </div>
   )
 }

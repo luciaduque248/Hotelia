@@ -5,6 +5,7 @@ import '../assets/css/Dashboard_User.css';
 import { Link } from 'react-router-dom';
 import dark_door from '../assets/img/iconos/dark-door.svg';
 import imagotype_dark from '../assets/img/imagotype-dark.png';
+import Footer from '../components/INICIO/Footer';
 
 
 function User_Dashboard() {
@@ -36,6 +37,7 @@ function User_Dashboard() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

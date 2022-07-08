@@ -86,6 +86,7 @@
         justify-content: center;
         padding: 0 0 1rem 0;
         margin-top: 2rem;
+        padding-bottom: 5rem;
         position: relative;
         right: 2rem;
     }
@@ -96,9 +97,12 @@
 
     .photo-Dashboard-admin {
         width: 12rem;
+        margin-top: 3rem;
     }
 
     .welcome-title-admin {
         font-size: 24px;
+        margin-top: 4rem;
+
     }
 }
