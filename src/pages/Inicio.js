@@ -30,7 +30,7 @@ function Inicio() {
         <SimpleSlider/>
         <FormBuscar/>
 
-        <div className='descubre-hotelia'>
+        <div className='descubre-hotelia' id='acerca-de-nosotros' >
             <div className='descubre'>
                 <h1>Descubre Hotelia</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim iaculis sit faucibus non. Amet nec massa faucibus non est. Arcu elementum id ac suspendisse vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

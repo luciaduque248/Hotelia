@@ -25,7 +25,7 @@ function Header() {
                 <ul className='navbar-ul'>
                     <li><Link to="/Hotelia/" className=' link'>Inicio</Link></li>
                     <li><Link to="" className=' link'>Habitaciones</Link></li>
-                    <li><Link to="" className=' link'>Acerca de nosotros</Link></li>
+                    <li><a href='#acerca-de-nosotros' className=' link'>Acerca de nosotros</a></li>
                     <li><Link to="" className=' link login'>Registrarse / Iniciar sesión</Link></li>
                 </ul>
             </nav>
