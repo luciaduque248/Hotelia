@@ -6,8 +6,14 @@ import { api } from '../utils/peticiones';
 import Nevera from '../assets/img/iconos/nevera.png'
 import Footer from '../components/Footer/Footer';
 
+
+import ModalEdit from '../Admin/Modal'
+
 import '../assets/css/ListHabs.css'
 function ListHabs() {
+    const [modal, setModal] = useState(false);
+    const [habitacion, setHabitacion] = useState({})
+
     const [habitaciones, setHabitaciones] = useState([]);
     useEffect(() => {
         axios(api).then(res => {
@@ -30,15 +36,22 @@ function ListHabs() {
                                 <div class="container-list">
                                     <div className="image-card-slide">
                                         <ImageCardSlide carousel={habitaciones.fotos} />
-                                        
+
                                     </div>
 
                                     <div className="button-card-inicio-list">
                                         <div className='disponible'>
                                             <button className="disponible-cards-list"><i class="fa-solid fa-circle"></i>DISPONIBLE</button>
                                         </div>
-                                        
-                                        <Link to='#'><button className="reservar-cards-list">EDITAR</button></Link>
+
+                                        <button
+                                            onClick={() => {
+                                                setModal(true)
+                                                setHabitacion(habitaciones)
+                                            }}
+                                            className="reservar-cards-list">EDITAR
+                                        </button>
+
                                     </div>
 
                                     <div class="card-list">
@@ -104,15 +117,19 @@ function ListHabs() {
 
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
 
 
                         ))
-
                     }
+
+
                 </div>
+                {
+                    modal ? <ModalEdit close={setModal} habitacion={habitacion} /> : null
+                }
 
             </div>
 
