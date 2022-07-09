@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
 import ImageCardSlide from '../components/INICIO/ImageCardSlide';
 import { api } from '../utils/peticiones';
 import Nevera from '../assets/img/iconos/nevera.png'
